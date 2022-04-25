@@ -1,4 +1,4 @@
-.THEOREM {
+.theorem {
     display: block;
     margin: 0% 10% 0% 10%;
     font-style: italic;
@@ -9,7 +9,30 @@
     border-width: thin;
 }
 
-@media screen and (min-width: 800px) {
+.algorithm {
+    display: block;
+    margin: 0% 10% 0% 10%;
+    font-style: italic;
+    font-family: Courier New;
+    padding: 14px;
+    border: solid black;
+    border-width: thin;
+}
+
+summary {
+  font-style: italic;
+  font-family: Avenir Next;
+  font-size: 16px;
+}
+
+.proof {
+  display: block;
+  margin: 0% 10% 0% 10%;
+  border-width: thin;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1200px) {
     /* floating TOC */
     #site-header {
         bottom:0;
@@ -23,7 +46,7 @@
     .SIDEBAR {
         bottom:0;
         position:fixed;
-        overflow-y:hidden;
+        overflow-y:scroll;
         overflow-x:hidden;
         top: 140px;
         left: 2%;
