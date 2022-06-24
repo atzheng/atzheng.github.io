@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-04-08 Fri 14:28 -->
+<!-- 2022-06-24 Fri 15:38 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>About me</title>
@@ -18,21 +18,21 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">About me</h1>
-<div class="SIDEBAR" id="orgbcdc904">
+<div class="SIDEBAR" id="org9fdd4e9">
 <p>
 
 </p>
 
 
-<div id="org69c97f1" class="figure">
+<div id="org52d2642" class="figure">
 <p><img src="profile.jpg" alt="profile.jpg" width="65%" />
 </p>
 </div>
 
 </div>
 
-<div id="outline-container-orgcebc5a3" class="outline-2">
-<h2 id="orgcebc5a3"><span class="section-number-2">1.</span> Bio</h2>
+<div id="outline-container-org13fded4" class="outline-2">
+<h2 id="org13fded4"><span class="section-number-2">1.</span> Bio</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 I&rsquo;m Andy Zheng, a PhD student at the Operations Research Center at MIT, advised by Prof. <a href="http://web.mit.edu/vivekf/www/">Vivek Farias</a>. I&rsquo;m interested in experimentation in marketplace settings, specifically challenges relating to interference and sequential designs.
@@ -52,16 +52,28 @@ Please reach out on <a href="https://www.twitter.com/atzheng">Twitter</a> or at 
 </div>
 </div>
 
-<div id="outline-container-org494fc09" class="outline-2">
-<h2 id="org494fc09"><span class="section-number-2">2.</span> Publications</h2>
+<div id="outline-container-org48d4e23" class="outline-2">
+<h2 id="org48d4e23"><span class="section-number-2">2.</span> Publications</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
+<li><p>
+<b><a href="https://arxiv.org/abs/2206.02371">Markovian Interference in Experiments</a></b> (2022, Preprint) <i>with Vivek Farias, Andrew A. Li, and Tianyi Peng</i>.
+</p>
+
+<p>
+We model experimentation in marketplace settings as an <i>off-policy evaluation</i> (OPE) problem. On one hand, &ldquo;naive&rdquo; A/B testing suffers bias on the order of the treatment effect; on the other, unbiased OPE estimators suffer from extremely high variance. We develop a bias-corrected estimator with bias <i>second-order</i> in the treatment effect, and variance exponentially smaller than unbiased OPE. This estimator dramatically improves over alternatives, even in our experiments on a large-scale ridesharing simulator.
+</p></li>
+
 <li><p>
 <b><a href="https://arxiv.org/abs/2202.07079">Synthetically Controlled Bandits</a></b> (2022, Preprint) <i>with Vivek Farias, Ciamac Moallemi, and Tianyi Peng</i>.
 </p>
 
 <p>
-Low-regret dynamic experimentation for settings with non-stationary rewards, where the non-stationarity can be modeled via synthetic controls; i.e., typical settings for switchback or synthetical control designs. When the treatment effect is positive, we can estimate the effect with high precision while incurring low regret.
+Synthetic controls are commonly used to control for non-stationarity, but the fixed experimental designs typical in such settings are both costly and brittle. By instead designing experiments <i>adaptively</i>, we can robustly identify the optimal treatment while incurring low regret.
+</p>
+
+<p>
+<i>Presented at RMP 2022, MSOM Service Management SIG 2022.</i>
 </p></li>
 
 <li><p>
@@ -70,7 +82,11 @@ Low-regret dynamic experimentation for settings with non-stationary rewards, whe
 </p>
 
 <p>
-A Cramer-Rao bound for the stochastic SIR model, demonstrating the difficulty of learning such models early in a pandemic. In practice, we use regularization to reduce the variance of the estimator, and apply this approach to the spread of COVID-19.
+A Cramer-Rao bound for the stochastic SIR model, demonstrating the difficulty of learning such models early in a pandemic. In practice, we design a regularization approach based on geographic heterogeneity, and apply this approach to predicting the spread of COVID-19.
+</p>
+
+<p>
+<i>Presented at EC 2021.</i>
 </p></li>
 
 <li><p>
@@ -84,12 +100,12 @@ Fast algorithms for the Dantzig selector and related problems, using large-scale
 </div>
 </div>
 
-<div id="outline-container-org25156db" class="outline-2">
-<h2 id="org25156db"><span class="section-number-2">3.</span> Teaching</h2>
+<div id="outline-container-orge588ee2" class="outline-2">
+<h2 id="orge588ee2"><span class="section-number-2">3.</span> Teaching</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
-<li>15.778: Introduction to Operations Management (Summer 2020, 2021, TA): Inventory management, queueing, capacity analysis.</li>
-<li>15.003: Analytics Tools (Fall 2019, Instructor): Basic data science tools in R and Python.</li>
+<li>15.778: Introduction to Operations Management (Summer 2020, 2021, 2022, TA): Inventory management, queueing, capacity analysis. Developed an interactive <a href="https://atzheng.shinyapps.io/retailer-game/">revenue management</a> game, now also used at several other universities.</li>
+<li>15.003: Analytics Tools (Fall 2019, 2021, Instructor): Basic data science tools in R and Python.</li>
 <li>15.774: Analytics of Operations Management (Spring 2019, TA): Recommender systems, social networks analysis, choice modeling, regression and classification.</li>
 <li><a href="https://philchodrow.github.io/cos_2018/">Computing in Optimization and Statistics</a> (IAP 2018, Instructor): Basic data science tools in R and Python.</li>
 </ul>
