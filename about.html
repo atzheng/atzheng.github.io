@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-09-08 Thu 16:09 -->
+<!-- 2022-09-08 Thu 16:44 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>About me</title>
@@ -18,22 +18,33 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">About me</h1>
-<div class="SIDEBAR" id="org0a7b882">
+<div class="SIDEBAR" id="orge493e21">
 <p>
 
 </p>
 
 
-<div id="orged71cb4" class="figure">
+<div id="org4c4e965" class="figure">
 <p><img src="profile.jpg" alt="profile.jpg" width="65%" />
 </p>
+</div>
+
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgcebc5a3">Bio</a></li>
+<li><a href="#org494fc09">Publications</a></li>
+<li><a href="#org25156db">Teaching</a></li>
+</ul>
+</div>
 </div>
 
 </div>
 
 <div id="outline-container-orgcebc5a3" class="outline-2">
-<h2 id="orgcebc5a3"><span class="section-number-2">1.</span> Bio</h2>
-<div class="outline-text-2" id="text-1">
+<h2 id="orgcebc5a3">Bio</h2>
+<div class="outline-text-2" id="text-orgcebc5a3">
 <p>
 I&rsquo;m Andy Zheng, a PhD student at the Operations Research Center at MIT, advised by Prof. <a href="http://web.mit.edu/vivekf/www/">Vivek Farias</a>. I&rsquo;m interested in experimentation in marketplace settings, specifically challenges relating to interference and sequential designs.
 </p>
@@ -53,15 +64,15 @@ Please reach out on <a href="https://www.twitter.com/atzheng">Twitter</a> or at 
 </div>
 
 <div id="outline-container-org494fc09" class="outline-2">
-<h2 id="org494fc09"><span class="section-number-2">2.</span> Publications</h2>
-<div class="outline-text-2" id="text-2">
+<h2 id="org494fc09">Publications</h2>
+<div class="outline-text-2" id="text-org494fc09">
 <ul class="org-ul">
 <li><p>
 <b><a href="papers/markovian-interference.pdf">Markovian Interference in Experiments</a></b> (2022, Preprint) <i>with Vivek Farias, Andrew A. Li, and Tianyi Peng</i>.
 </p>
 
 <p>
-We model experimentation in marketplace settings as an <i>off-policy evaluation</i> (OPE) problem. On one hand, &ldquo;naive&rdquo; A/B testing suffers bias on the order of the treatment effect; on the other, unbiased OPE estimators suffer from extremely high variance. We develop a bias-corrected estimator with bias <i>second-order</i> in the treatment effect, and variance exponentially smaller than unbiased OPE. This estimator dramatically improves over alternatives, even in our experiments on a large-scale ridesharing simulator. This correction, is derive from a Taylor-like expansion of the off-policy objective value, which is of independent interest.
+We model experimentation in marketplace settings as an <i>off-policy evaluation</i> (OPE) problem. On one hand, &ldquo;naive&rdquo; A/B testing suffers bias on the order of the treatment effect; on the other, unbiased OPE estimators suffer from extremely high variance. We develop a bias-corrected estimator with bias <i>second-order</i> in the treatment effect, and variance exponentially smaller than unbiased OPE. This estimator dramatically improves over alternatives, even in our experiments on a large-scale ridesharing simulator. This correction is derived from a Taylor-like expansion of the off-policy objective value, of independent interest.
 </p>
 
 <p>
@@ -86,7 +97,7 @@ Synthetic controls are commonly used to control for non-stationarity, but the fi
 </p>
 
 <p>
-Diffusion processes model viral transmission in a population. Two classic examples are the SIR model for disease transmission, and the Bass model for product adoption. We present a Cramer-Rao bound characterizing the difficulty of learning such models in a stochastic setting. Key parameters <i>cannot</i> be learned with reasonable variance until 2/3 of the time where infections (or product adoptions) are at their peak, a major barrier for e.g. timely pandemic response. In practice, we work around this via a regularization approach based on geographic heterogeneity, and apply this approach to predicting the spread of COVID-19.
+Diffusion processes model viral transmission in a population. Two classic examples are the SIR model for disease transmission, and the Bass model for product adoption. We present a Cramer-Rao bound characterizing the difficulty of learning such models in a stochastic setting. Key parameters <i>cannot</i> be learned with reasonable variance until 2/3 of the time where infections (or product adoptions) are at their peak, a major barrier to timely pandemic response. In practice, we work around this via a regularization approach based on geographic heterogeneity, and apply this approach to predicting the spread of COVID-19.
 </p>
 
 <p>
@@ -99,7 +110,7 @@ Diffusion processes model viral transmission in a population. Two classic exampl
 </p>
 
 <p>
-Online retailers scale to millions of products and users. Systems at this scale must be able to provide high-quality product recommendations in milliseconds, necessitating approaches to assortment optimization that work in time <i>sub-linear</i> in the number of products. We design a sampling scheme, based on locality-sensitive hashing, which samples a set of candidate products which is 1) sublinear in size, and 2) optimizing over which yields an assortment.
+Online retailers must be able to serve high-quality product assortments within milliseconds of a request. At a scale of millions of products and users, this necessitates approaches to assortment optimization that work in time <i>sub-linear</i> in the number of products. We design a sampling scheme, based on locality-sensitive hashing, which samples a set of candidate products which is 1) sub-linear in size, and 2) contains a provable approximation to the optimal assortment. Experiments show show a much better tradeoff between response time and optimality, relative to existing heuristics.
 </p>
 
 <p>
@@ -122,13 +133,13 @@ Fast algorithms for the Dantzig selector and related problems, using large-scale
 </div>
 
 <div id="outline-container-org25156db" class="outline-2">
-<h2 id="org25156db"><span class="section-number-2">3.</span> Teaching</h2>
-<div class="outline-text-2" id="text-3">
+<h2 id="org25156db">Teaching</h2>
+<div class="outline-text-2" id="text-org25156db">
 <ul class="org-ul">
-<li>15.778: Introduction to Operations Management (Summer 2020, 2021, 2022, TA): Inventory management, queueing, capacity analysis. Developed an interactive <a href="https://atzheng.shinyapps.io/retailer-game/">revenue management</a> game, now also used at several other universities.</li>
-<li>15.003: Analytics Tools (Fall 2019, 2021, Instructor): Basic data science tools in R and Python.</li>
+<li>15.778: Introduction to Operations Management (Summer 2020, 2021, 2022, TA): Inventory management, queueing, capacity analysis. Core class for the Sloan Fellows MBA program for mid-career professionals. Developed an interactive <a href="https://atzheng.shinyapps.io/retailer-game/">revenue management</a> game, now also used at several other universities.</li>
+<li>15.003: Analytics Tools (Fall 2019, 2021, Instructor): Data science tools in R and Python, for the Masters of Business Analytics program.</li>
 <li>15.774: Analytics of Operations Management (Spring 2019, TA): Recommender systems, social networks analysis, choice modeling, regression and classification.</li>
-<li><a href="https://philchodrow.github.io/cos_2018/">Computing in Optimization and Statistics</a> (IAP 2018, Instructor): Basic data science tools in R and Python.</li>
+<li><a href="https://philchodrow.github.io/cos_2018/">Computing in Optimization and Statistics</a> (IAP 2018, Instructor): Data science tools in R and Python.</li>
 </ul>
 </div>
 </div>
