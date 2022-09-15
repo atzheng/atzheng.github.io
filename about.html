@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-09-08 Thu 16:44 -->
+<!-- 2022-09-15 Thu 16:34 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>About me</title>
@@ -18,13 +18,13 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">About me</h1>
-<div class="SIDEBAR" id="orge493e21">
+<div class="SIDEBAR" id="org18f7c7f">
 <p>
 
 </p>
 
 
-<div id="org4c4e965" class="figure">
+<div id="org0574e77" class="figure">
 <p><img src="profile.jpg" alt="profile.jpg" width="65%" />
 </p>
 </div>
@@ -50,15 +50,15 @@ I&rsquo;m Andy Zheng, a PhD student at the Operations Research Center at MIT, ad
 </p>
 
 <p>
-Previously, I was a data scientist at Uber, working on match optimization for UberPOOL. I recieved a B.S. in Industrial Engineering and an M.S. in Computer Science at Northwestern.
+Previously, I was a data scientist at Uber, working on match optimization for UberPOOL. I recieved a B.S. in Industrial Engineering and an M.S. in Computer Science at Northwestern. You can find my full CV <a href="cv.pdf">here</a>.
 </p>
 
 <p>
-In my spare time I play jazz (sax, piano), look for birds, and procrastinate by tweaking my Emacs config or the CSS on this site.
+Please reach out at <a href="mailto:atz@mit.edu">atz@mit.edu</a>!
 </p>
 
 <p>
-Please reach out on <a href="https://www.twitter.com/atzheng">Twitter</a> or at <a href="mailto:atz@mit.edu">atz@mit.edu</a>!
+<b>I am seeking academic positions on the 2022-2023 job market.</b>
 </p>
 </div>
 </div>
@@ -68,65 +68,71 @@ Please reach out on <a href="https://www.twitter.com/atzheng">Twitter</a> or at 
 <div class="outline-text-2" id="text-org494fc09">
 <ul class="org-ul">
 <li><p>
-<b><a href="papers/markovian-interference.pdf">Markovian Interference in Experiments</a></b> (2022, Preprint) <i>with Vivek Farias, Andrew A. Li, and Tianyi Peng</i>.
+<b><a href="papers/markovian-interference.pdf">Markovian Interference in Experiments</a></b> with Vivek Farias, Andrew A. Li, and Tianyi Peng.
+<i>To appear at NeurIPS 2022. Finalist, 2022 RMP Jeff McGill Student Paper Award. Finalist, 2022 APS Best Student Paper Award.</i>
 </p>
 
 <p>
+ <details><summary>Details</summary>
 We model experimentation in marketplace settings as an <i>off-policy evaluation</i> (OPE) problem. On one hand, &ldquo;naive&rdquo; A/B testing suffers bias on the order of the treatment effect; on the other, unbiased OPE estimators suffer from extremely high variance. We develop a bias-corrected estimator with bias <i>second-order</i> in the treatment effect, and variance exponentially smaller than unbiased OPE. This estimator dramatically improves over alternatives, even in our experiments on a large-scale ridesharing simulator. This correction is derived from a Taylor-like expansion of the off-policy objective value, of independent interest.
-</p>
-
-<p>
-<i>Finalist, 2022 INFORMS APS Best Student Paper Award.</i>
+   </details>
 </p></li>
 
 <li><p>
-<b><a href="papers/synthetically-controlled-bandits.pdf">Synthetically Controlled Bandits</a></b> (2022, Preprint) <i>with Vivek Farias, Ciamac Moallemi, and Tianyi Peng</i>.
+<b><a href="papers/synthetically-controlled-bandits.pdf">Synthetically Controlled Bandits</a></b> with Vivek Farias, Ciamac Moallemi, and Tianyi Peng. <i>Presented at RMP 2022, MSOM Service Management SIG 2022.</i>
 </p>
 
 <p>
+ <details><summary>Details</summary>
 Synthetic controls are commonly used to control for non-stationarity, but the fixed experimental designs typical in such settings are both costly and fragile to non-stationarity in the controls. By instead designing experiments <i>adaptively</i>, we can robustly identify the optimal treatment while incurring low regret.
-</p>
-
-<p>
-<i>Presented at RMP 2022, MSOM Service Management SIG 2022.</i>
+   </details>
 </p></li>
 
 <li><p>
-<b><a href="https://arxiv.org/abs/2006.06373">The Limits to Learning a Diffusion Process</a></b> (2020, Preprint)
-<i>with Jackie Baek, Vivek Farias, Andreea Georgescu, Retsef Levi, Tianyi Peng, Deeksha Sinha, and Joshua Wilde.</i>
+<b><a href="limits-to-learning.pdf">The Limits to Learning a Diffusion Process</a></b>
+with Jackie Baek, Vivek Farias, Andreea Georgescu, Retsef Levi, Tianyi Peng, Deeksha Sinha, and Joshua Wilde. <i>Presented at EC 2021. Under Review at Management Science.</i>
 </p>
 
 <p>
+ <details><summary>Details</summary>
 Diffusion processes model viral transmission in a population. Two classic examples are the SIR model for disease transmission, and the Bass model for product adoption. We present a Cramer-Rao bound characterizing the difficulty of learning such models in a stochastic setting. Key parameters <i>cannot</i> be learned with reasonable variance until 2/3 of the time where infections (or product adoptions) are at their peak, a major barrier to timely pandemic response. In practice, we work around this via a regularization approach based on geographic heterogeneity, and apply this approach to predicting the spread of COVID-19.
+</p></li>
+</ul>
+<p>
+ </details>
+</p>
+
+
+<ul class="org-ul">
+<li><p>
+<b>Optimizing Offer Sets in Sublinear Time</b> with Vivek Farias, Andrew A. Li, and Deeksha Sinha. <i>Under review at Management Science.</i>
 </p>
 
 <p>
-<i>Presented at EC 2021. Under Review at Management Science.</i>
+ <details><summary>Details</summary>
+ Online retailers must be able to serve high-quality product assortments within milliseconds of a request. At a scale of millions of products and users, this necessitates approaches to assortment optimization that work in time <i>sub-linear</i> in the number of products. We design a sampling scheme, based on locality-sensitive hashing, which samples a set of candidate products which is 1) sub-linear in size, and 2) contains a provable approximation to the optimal assortment. Experiments show show a much better tradeoff between response time and optimality, relative to existing heuristics.
+   </details>
 </p></li>
 
 <li><p>
-<b>Optimizing Offer Sets in Sublinear Time</b>  (2020, Preprint)
-<i>with Vivek Farias, Andrew A. Li, and Deeksha Sinha.</i>
+<b><a href="kernel-alp.pdf">Non-parametric Approximate Dynamic Programming via the Kernel Method</a></b>
+with Nikhil Bhat, Vivek Farias, and Ciamac Moallemi. <i>To appear in Management Science.</i>
 </p>
 
 <p>
-Online retailers must be able to serve high-quality product assortments within milliseconds of a request. At a scale of millions of products and users, this necessitates approaches to assortment optimization that work in time <i>sub-linear</i> in the number of products. We design a sampling scheme, based on locality-sensitive hashing, which samples a set of candidate products which is 1) sub-linear in size, and 2) contains a provable approximation to the optimal assortment. Experiments show show a much better tradeoff between response time and optimality, relative to existing heuristics.
-</p>
-
-<p>
-<i>Under review at Management Science.</i>
+ <details><summary>Details</summary>
+ A novel, non-parametric approximate dynamic programming (ADP) algorithm that enjoys dimension-independent approximation and sample complexity guarantees. We obtain this algorithm by ‘kernelizing’ a recent mathematical program for ADP, the &ldquo;smoothed approximate LP&rdquo;.
+  </details>
 </p></li>
 
-<li><b>Non-parametric Approximate Dynamic Programming via the Kernel Method</b> (2022)
-<i>with Nikhil Bhat, Vivek Farias, and Ciamac Moallemi.</i>
-  <i>To appear in Management Science.</i></li>
-
 <li><p>
-<b><a href="https://arxiv.org/abs/1908.06515">Computing Estimators of Dantzig Selector type via Column and Constraint Generation</a></b> (2019, Preprint) <i>with Rahul Mazumder and Stephen Wright</i>.
+<b><a href="https://arxiv.org/abs/1908.06515">Computing Estimators of Dantzig Selector type via Column and Constraint Generation</a></b> <i>with Rahul Mazumder and Stephen Wright</i>.
 </p>
 
 <p>
+ <details><summary>Details</summary>
 Fast algorithms for the Dantzig selector and related problems, using large-scale LP techniques and warm starts.
+ </details>
 </p></li>
 </ul>
 </div>
@@ -136,10 +142,10 @@ Fast algorithms for the Dantzig selector and related problems, using large-scale
 <h2 id="org25156db">Teaching</h2>
 <div class="outline-text-2" id="text-org25156db">
 <ul class="org-ul">
-<li>15.778: Introduction to Operations Management (Summer 2020, 2021, 2022, TA): Inventory management, queueing, capacity analysis. Core class for the Sloan Fellows MBA program for mid-career professionals. Developed an interactive <a href="https://atzheng.shinyapps.io/retailer-game/">revenue management</a> game, now also used at several other universities.</li>
-<li>15.003: Analytics Tools (Fall 2019, 2021, Instructor): Data science tools in R and Python, for the Masters of Business Analytics program.</li>
-<li>15.774: Analytics of Operations Management (Spring 2019, TA): Recommender systems, social networks analysis, choice modeling, regression and classification.</li>
-<li><a href="https://philchodrow.github.io/cos_2018/">Computing in Optimization and Statistics</a> (IAP 2018, Instructor): Data science tools in R and Python.</li>
+<li><b>15.778: Introduction to Operations Management</b> (Summer 2020, 2021, 2022, TA): Inventory management, queueing, capacity analysis. Core class for the Sloan Fellows MBA program for mid-career professionals. Developed an interactive <a href="https://atzheng.shinyapps.io/retailer-game/">revenue management</a> game, now also used at several other universities.</li>
+<li><b>15.003: Analytics Tools</b> (Fall 2019, 2021, Instructor): Data science tools in R and Python, for the Masters of Business Analytics program.</li>
+<li><b>15.774: Analytics of Operations Management</b> (Spring 2019, TA): Recommender systems, social networks analysis, choice modeling, regression and classification.</li>
+<li><b><a href="https://philchodrow.github.io/cos_2018/">Computing in Optimization and Statistics</a></b> (IAP 2018, Instructor): Data science tools in R and Python.</li>
 </ul>
 </div>
 </div>
