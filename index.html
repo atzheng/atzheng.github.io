@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-10-25 Tue 10:44 -->
+<!-- 2022-11-04 Fri 21:24 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>About me</title>
@@ -14,26 +14,28 @@
 </head>
 <body>
 <div id="preamble" class="status">
-<div id="site-header" > <h1><a href="index.html">atzheng.github.io</a></h1> <a href="index.html">Index</a> <a href="about.html">About</a> <a href="https://www.twitter.com/atzheng">Twitter</a> <a href="https://github.com/atzheng">Github</a> </div>
+<div id="site-header" > <h1><a href="index.html">atzheng.github.io</a></h1> <a href="index.html"> Index</a> <a href="about.html">About</a> <a href="https://www.twitter.com/atzheng">Twitter</a> <a href="https://github.com/atzheng">Github</a> </div>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2VVR13CD9C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2VVR13CD9C');
+</script>
 </div>
 <div id="content" class="content">
-<h1 class="title">About me</h1>
-<div class="SIDEBAR" id="orga0b2838">
-<p>
+<div class="SIDEBAR" id="orga1abc94">
 
-</p>
-
-
-<div id="org014163c" class="figure">
-<p><img src="profile.jpg" alt="profile.jpg" width="65%" />
+<div id="org7ab9bf0" class="figure">
+<p><img src="profile.jpg" alt="profile.jpg" width="65%" /><br />
 </p>
 </div>
-
 <div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org4f5d243">Bio</a></li>
+<li><a href="#org03738e0">About me</a></li>
 <li><a href="#org79d98db">Publications</a></li>
 <li><a href="#org5a6549e">Teaching</a></li>
 </ul>
@@ -41,25 +43,26 @@
 </div>
 
 </div>
-
-<div id="outline-container-org4f5d243" class="outline-2">
-<h2 id="org4f5d243">Bio</h2>
-<div class="outline-text-2" id="text-org4f5d243">
+<hr />
+<div id="outline-container-org03738e0" class="outline-2">
+<h2 id="org03738e0">About me</h2>
+<div class="outline-text-2" id="text-org03738e0">
 <p>
-I&rsquo;m Andy Zheng, a PhD student at the Operations Research Center at MIT, advised by Prof. <a href="http://web.mit.edu/vivekf/www/">Vivek Farias</a>. I&rsquo;m interested in experimentation in marketplace settings, specifically challenges relating to interference and sequential designs.
+I&rsquo;m Andy Zheng, a PhD student at the Operations Research Center at MIT, advised by Prof. <a href="http://web.mit.edu/vivekf/www/">Vivek Farias</a>. I&rsquo;m interested in experimentation and control problems in marketplace settings, specifically challenges relating to interference, sequential designs, policy evaluation, and policy optimization.<br />
 </p>
 
 <p>
-Previously, I spent two years as a data scientist at Uber, working on match optimization for UberPOOL. I recieved a B.S. in Industrial Engineering and an M.S. in Computer Science at Northwestern. You can find my full CV <a href="cv.pdf">here</a>.
+Previously, I spent two years as a data scientist at Uber, working on match optimization for UberPOOL. I recieved a B.S. in Industrial Engineering and an M.S. in Computer Science at Northwestern. You can find my full CV <a href="cv.pdf">here</a>.<br />
 </p>
 
 <p>
-Please reach out at <a href="mailto:atz@mit.edu">atz@mit.edu</a>!
+Please reach out at <a href="mailto:atz@mit.edu">atz@mit.edu</a>!<br />
 </p>
 
 <p>
-<b>I am seeking academic positions on the 2022-2023 job market.</b>
+<b>I am seeking academic positions on the 2022-2023 job market.</b><br />
 </p>
+<hr />
 </div>
 </div>
 
@@ -68,72 +71,57 @@ Please reach out at <a href="mailto:atz@mit.edu">atz@mit.edu</a>!
 <div class="outline-text-2" id="text-org79d98db">
 <ul class="org-ul">
 <li><p>
-<b><a href="papers/markovian-interference.pdf">Markovian Interference in Experiments</a></b> with Vivek Farias, Andrew A. Li, and Tianyi Peng.
-<i>Preliminary: NeurIPS 2022. Under preparation for Management Science.</i>
+<b><a href="papers/markovian-interference.pdf">Markovian Interference in Experiments</a></b><br />
+<i>with Vivek Farias, Andrew A. Li, and Tianyi Peng.</i><br />
+Preliminary: NeurIPS 2022. Under preparation for Management Science.<br />
 </p>
+<div class="awards" id="org6e5c5d2">
 <ul class="org-ul">
-<li><b>Winner</b>, 2022 RMP Jeff McGill Student Paper Award.</li>
-<li><b>Winner</b>, 2022 APS Best Student Paper Award.</li>
-<li><b>Oral</b> presentation at NeurIPS 2022.</li>
+<li><b>Winner</b>, 2022 RMP Jeff McGill Student Paper Award.<br /></li>
+<li><b>Winner</b>, 2022 APS Best Student Paper Award.<br /></li>
+<li><b>Oral</b> presentation at NeurIPS 2022.<br /></li>
 </ul>
 
+</div>
 <p>
- <details><summary>Details</summary>
-We model experimentation in marketplace settings as an <i>off-policy evaluation</i> (OPE) problem. On one hand, &ldquo;naive&rdquo; A/B testing suffers bias on the order of the treatment effect; on the other, unbiased OPE estimators suffer from extremely high variance. We develop a bias-corrected estimator with bias <i>second-order</i> in the treatment effect, and variance exponentially smaller than unbiased OPE. This estimator dramatically improves over alternatives, even in our experiments on a large-scale ridesharing simulator. This correction is derived from a Taylor-like expansion of the off-policy objective value, of independent interest.
-   </details>
+   <details><summary>Details</summary><br />
+We model experimentation in marketplace settings as an <i>off-policy evaluation</i> (OPE) problem. On one hand, &ldquo;naive&rdquo; A/B testing suffers bias on the order of the treatment effect; on the other, unbiased OPE estimators suffer from extremely high variance. We develop a bias-corrected estimator with bias <i>second-order</i> in the treatment effect, and variance exponentially smaller than unbiased OPE. This estimator dramatically improves over alternatives, even in our experiments on a large-scale ridesharing simulator. This correction is derived from a Taylor-like expansion of the off-policy objective value, of independent interest.<br />
+   </details><br />
 </p></li>
-
-<li><p>
-<b><a href="papers/synthetically-controlled-bandits.pdf">Synthetically Controlled Bandits</a></b> with Vivek Farias, Ciamac Moallemi, and Tianyi Peng. <i>Preliminary: MSOM Service Management SIG 2022. Under review at Management Science.</i>
-</p>
-
-<p>
- <details><summary>Details</summary>
-Synthetic controls are commonly used to control for non-stationarity, but the fixed experimental designs typical in such settings are both costly and fragile to non-stationarity in the controls. By instead designing experiments <i>adaptively</i>, we can robustly identify the optimal treatment while incurring low regret.
-   </details>
-</p></li>
-
-<li><p>
-<b><a href="papers/limits-to-learning.pdf">The Limits to Learning a Diffusion Process</a></b>
-with Jackie Baek, Vivek Farias, Andreea Georgescu, Retsef Levi, Tianyi Peng, Deeksha Sinha, and Joshua Wilde. <i>Preliminary: EC 2021. R&amp;R at Management Science.</i>
-</p>
-
-<p>
- <details><summary>Details</summary>
-Diffusion processes model viral transmission in a population. Two classic examples are the SIR model for disease transmission, and the Bass model for product adoption. We present a Cramer-Rao bound characterizing the difficulty of learning such models in a stochastic setting. Key parameters <i>cannot</i> be learned with reasonable variance until 2/3 of the time where infections (or product adoptions) are at their peak, a major barrier to timely pandemic response. In practice, we work around this via a regularization approach based on geographic heterogeneity, and apply this approach to predicting the spread of COVID-19.
-</p></li>
-</ul>
-<p>
- </details>
-</p>
-
-<ul class="org-ul">
-<li><b><a href="https://www.pnas.org/doi/10.1073/pnas.2113561119">Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the US</a></b> with Estee Cramer et. al. <i>PNAS 2022.</i></li>
+<li><b><a href="papers/synthetically-controlled-bandits.pdf">Synthetically Controlled Bandits</a></b><br />
+ <i>with Vivek Farias, Ciamac Moallemi, and Tianyi Peng.</i><br />
+ Preliminary: MSOM Service Management SIG 2022. Under review at Management Science.<br />
+ <details><summary>Details</summary><br />
+Synthetic controls are commonly used to control for non-stationarity, but the fixed experimental designs typical in such settings are both costly and fragile to non-stationarity in the controls. By instead designing experiments <i>adaptively</i>, we can robustly identify the optimal treatment while incurring low regret.<br />
+   </details><br /></li>
+<li><b><a href="papers/limits-to-learning.pdf">The Limits to Learning a Diffusion Process</a></b><br />
+<i>with Jackie Baek, Vivek Farias, Andreea Georgescu, Retsef Levi, Tianyi Peng, Deeksha Sinha, and Joshua Wilde.</i><br />
+Preliminary: EC 2021. R&amp;R at Management Science.<br />
+ <details><summary>Details</summary><br />
+Diffusion processes model viral transmission in a population. Two classic examples are the SIR model for disease transmission, and the Bass model for product adoption. We present a Cramer-Rao bound characterizing the difficulty of learning such models in a stochastic setting. Key parameters <i>cannot</i> be learned with reasonable variance until 2/3 of the time where infections (or product adoptions) are at their peak, a major barrier to timely pandemic response. In practice, we work around this via a regularization approach based on geographic heterogeneity, and apply this approach to predicting the spread of COVID-19.<br />
+ </details><br /></li>
+<li><b><a href="https://www.pnas.org/doi/10.1073/pnas.2113561119">Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the US</a></b><br />
+<i>with Estee Cramer et. al.</i><br />
+PNAS 2022<br /></li>
 </ul>
 
 
 <ul class="org-ul">
-<li><p>
-<b><a href="papers/optimizing-offer-sets.pdf">Optimizing Offer Sets in Sublinear Time</a></b> with Vivek Farias, Andrew A. Li, and Deeksha Sinha. <i>Preliminary: EC 2020. Major revision, submitted to Management Science.</i>
-</p>
-
-<p>
- <details><summary>Details</summary>
- Online retailers must be able to serve high-quality product assortments within milliseconds of a request. At a scale of millions of products and users, this necessitates approaches to assortment optimization that work in time <i>sub-linear</i> in the number of products. We design a sampling scheme, based on locality-sensitive hashing, which samples a set of candidate products which is 1) sub-linear in size, and 2) contains a provable approximation to the optimal assortment. Experiments show show a much better tradeoff between response time and optimality, relative to existing heuristics.
-   </details>
-</p></li>
-
-<li><p>
-<b><a href="papers/kernel-alp.pdf">Non-parametric Approximate Dynamic Programming via the Kernel Method</a></b>
-with Nikhil Bhat, Vivek Farias, and Ciamac Moallemi. <i>Conditionally accepted in Stochastic Systems.</i>
-</p>
-
-<p>
- <details><summary>Details</summary>
- A novel, non-parametric approximate dynamic programming (ADP) algorithm that enjoys dimension-independent approximation and sample complexity guarantees. We obtain this algorithm by ‘kernelizing’ a recent mathematical program for ADP, the &ldquo;smoothed approximate LP&rdquo;.
-  </details>
-</p></li>
+<li><b><a href="papers/optimizing-offer-sets.pdf">Optimizing Offer Sets in Sublinear Time</a></b><br />
+ <i>with Vivek Farias, Andrew A. Li, and Deeksha Sinha.</i><br />
+ Preliminary: EC 2020. Major revision, submitted to Management Science.<br />
+ <details><summary>Details</summary><br />
+ Online retailers must be able to serve high-quality product assortments within milliseconds of a request. At a scale of millions of products and users, this necessitates approaches to assortment optimization that work in time <i>sub-linear</i> in the number of products. We design a sampling scheme, based on locality-sensitive hashing, which samples a set of candidate products which is 1) sub-linear in size, and 2) contains a provable approximation to the optimal assortment. Experiments show show a much better tradeoff between response time and optimality, relative to existing heuristics.<br />
+   </details><br /></li>
+<li><b><a href="papers/kernel-alp.pdf">Non-parametric Approximate Dynamic Programming via the Kernel Method</a></b><br />
+<i>with Nikhil Bhat, Vivek Farias, and Ciamac Moallemi.</i><br />
+Conditionally accepted in Stochastic Systems.<br />
+  <details><summary>Details</summary><br />
+ A novel, non-parametric approximate dynamic programming (ADP) algorithm that enjoys dimension-independent approximation and sample complexity guarantees. We obtain this algorithm by ‘kernelizing’ a recent mathematical program for ADP, the &ldquo;smoothed approximate LP&rdquo;.<br />
+   </details><br /></li>
 </ul>
+
+<hr />
 </div>
 </div>
 
@@ -141,10 +129,22 @@ with Nikhil Bhat, Vivek Farias, and Ciamac Moallemi. <i>Conditionally accepted i
 <h2 id="org5a6549e">Teaching</h2>
 <div class="outline-text-2" id="text-org5a6549e">
 <ul class="org-ul">
-<li><b>15.778: Introduction to Operations Management</b> (Summer 2020, 2021, 2022, TA): Inventory management, queueing, capacity analysis. Core class for the Sloan Fellows MBA program for mid-career professionals. Developed an interactive <a href="https://atzheng.shinyapps.io/retailer-game/">revenue management</a> game, now also used at several other universities.</li>
-<li><b>15.003: Analytics Tools</b> (Fall 2019, 2021, Instructor): Data science tools in R and Python, for the Masters of Business Analytics program.</li>
-<li><b>15.774: Analytics of Operations Management</b> (Spring 2019, TA): Recommender systems, social networks analysis, choice modeling, regression and classification.</li>
-<li><b><a href="https://philchodrow.github.io/cos_2018/">Computing in Optimization and Statistics</a></b> (IAP 2018, Instructor): Data science tools in R and Python.</li>
+<li><b>15.778: Introduction to Operations Management</b><br />
+<i>Summer 2020, 2021, 2022, TA</i><br />
+ Inventory management, queueing, capacity analysis. Core class for the Sloan Fellows MBA program for mid-career professionals. Developed an interactive <a href="https://atzheng.shinyapps.io/retailer-game/">revenue management</a> game, now also used at several other universities.<br /></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>15.003: Analytics Tools</b><br />
+<i>Fall 2019, 2021, Instructor</i><br />
+ Data science tools in R and Python, for the Masters of Business Analytics program.<br /></li>
+</ul>
+
+<ul class="org-ul">
+<li><b><a href="https://philchodrow.github.io/cos_2018/">Computing in Optimization and Statistics</a></b><br />
+<i>IAP 2018, Instructor</i><br />
+ Data science tools in R and Python, for MIT graduate and undergraduate students.<br /></li>
 </ul>
 </div>
 </div>
