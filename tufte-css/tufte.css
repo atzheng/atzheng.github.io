@@ -46,12 +46,12 @@ html {
 
 body {
     /* width: 87.5%; */
-    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     /* padding-left: 12.5%; */
-    font-family: Helvetica Neue Light, et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-family: Helvetica Neue, et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     /* background-color: #fffff8; */
+    font-weight: 300;
     color: #111;
     max-width: 1400px;
     counter-reset: sidenote-counter;
@@ -72,21 +72,19 @@ h2 {
     font-style: normal;
     /* font-weight: 400; */
     margin-top: 1.8rem;
-    margin-bottom: 0.0rem;
+    margin-bottom: 1.4rem;
     font-size: 2.6rem;
     line-height: 1;
 }
 
 h3 {
     font-family: Helvetica Neue;
-    margin-block-end: 0em;
-    margin-block-start: 0em;
     /* font-style: italic; */
     /* font-weight: 400; */
-    font-size: 1.7rem;
-    margin-top: 2rem;
-    margin-bottom: 0.0rem;
-     line-height: 1;
+    /* font-size: 1.7rem; */
+    /* margin-top: 2rem; */
+    /* margin-bottom: 1.4rem; */
+    /* line-height: 1; */
 }
 
 hr {
@@ -135,7 +133,7 @@ ul {
 }
 
 p {
-    margin-top: 0.4rem;
+    margin-top: 1.4rem;
     margin-bottom: 1.4rem;
     padding-right: 0;
     vertical-align: baseline;
@@ -195,9 +193,9 @@ section > ul {
 }
 
 dt:not(:first-child),
-/* li:not(:first-child) { */
-/*     margin-top: 0.25rem; */
-/* } */
+li:not(:first-child) {
+    margin-top: 0.25rem;
+}
 
 figure {
     padding: 0;
