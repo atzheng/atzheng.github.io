@@ -43,6 +43,15 @@ summary {
         left: 2%;
         width: 30%;
     }
+.SIDEBAR::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.SIDEBAR{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
     .SIDEBAR {
         bottom:0;
         position:fixed;
@@ -50,7 +59,7 @@ summary {
         overflow-x:hidden;
         top: 140px;
         left: 2%;
-        width: 30%;
+        width: 26%;
         font-size: 12px;
     }
 
