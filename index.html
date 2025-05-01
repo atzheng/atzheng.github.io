@@ -56,30 +56,42 @@ In my spare time I play jazz, look for birds, and procrastinate by tweaking my E
 <h2 id="org1f2409b">Publications</h2>
 <div class="outline-text-2" id="text-org1f2409b">
 <ul class="org-ul">
-<li><b><a href="https://arxiv.org/abs/2406.01939">Speeding up Policy Simulation in Supply Chain RL</a></b><br />
-<i>with Vivek Farias, Joren Gijsbrechts, Aryan Khojandi, Tianyi Peng</i>
-   <details><summary>Details</summary><br />
-  Simulating a single trajectory of a dynamical system under some state-dependent policy is a core bottleneck in policy optimization algorithms. The many inherently serial policy evaluations that must be performed in a single simulation constitute the bulk of this bottleneck. To wit, in applying policy optimization to supply chain optimization (SCO) problems, simulating a single month of a supply chain can take several hours.
-We present an iterative algorithm for policy simulation, which we dub Picard Iteration. This scheme carefully assigns policy evaluation tasks to independent processes. Within an iteration, a single process evaluates the policy only on its assigned tasks while assuming a certain 'cached' evaluation for other tasks; the cache is updated at the end of the iteration. Implemented on GPUs, this scheme admits batched evaluation of the policy on a single trajectory. We prove that the structure afforded by many SCO problems allows convergence in a small number of iterations, independent of the horizon. We demonstrate practical speedups of 400x on large-scale SCO problems even with a single GPU, and also demonstrate practical efficacy in other RL environments.
-<br />
-   </details><br /></li>
-<li><b><a href="https://arxiv.org/abs/2305.02542">Correcting for Interference in Experiments: A Case Study at Douyin</a></b><br />
-<i>with Vivek Farias, Hao Li, Tianyi Peng, Xinyuyang Ren, and Huawei Zhang</i><br />
-Preliminary: RecSys 2023.<br />
-   <details><summary>Details</summary><br />
-  Interference is a ubiquitous problem in experiments conducted on two-sided content marketplaces, such as Douyin (China&rsquo;s analog of TikTok). In many cases, creators are the natural unit of experimentation, but creators interfere with each other through competition for viewers&rsquo; limited time and attention. &ldquo;Naive&rdquo; estimators currently used in practice simply ignore the interference, but in doing so incur bias on the order of the treatment effect. We formalize the problem of inference in such experiments as one of policy evaluation. Off-policy estimators, while unbiased, are impractically high variance. We introduce a novel Monte-Carlo estimator, based on &ldquo;Differences-in-Qs&rdquo; (DQ) techniques, which achieves bias that is second-order in the treatment effect, while remaining sample-efficient to estimate. On the theoretical side, our contribution is to develop a generalized theory of Taylor expansions for policy evaluation, which extends DQ theory to all major MDP formulations. On the practical side, we implement our estimator on Douyin&rsquo;s experimentation platform, and in the process develop DQ into a truly &ldquo;plug-and-play&rdquo; estimator for interference in real-world settings: one which provides robust, low-bias, low-variance treatment effect estimates; admits computationally cheap, asymptotically exact uncertainty quantification; and reduces MSE by 99\% compared to the best existing alternatives in our applications.<br />
-   </details><br /></li>
-<li><p>
-<b><a href="papers/markovian-interference.pdf">Markovian Interference in Experiments</a></b><br />
-<i>with Vivek Farias, Andrew A. Li, and Tianyi Peng.</i><br />
-Preliminary: NeurIPS 2022. Under preparation for Management Science.<br />
-</p>
-<div class="awards" id="org5e76750">
-<ul class="org-ul">
-<li><b>Winner</b>, 2022 RMP Jeff McGill Student Paper Award.<br /></li>
-<li><b>Winner</b>, 2022 APS Best Student Paper Award.<br /></li>
-<li><b>Oral</b> presentation at NeurIPS 2022.<br /></li>
-</ul>
+    <li><b><a href="https://arxiv.org/abs/2503.02271">Differences-in-Neighbors for Network Interference in Experiments
+    </a></b><br />
+    <i>with Tianyi Peng, Naimeng Ye</i>
+    <details><summary>Details</summary><br />
+        We propose a new estimator for experiments with network interference, dubbed Differences-in-Neighbors (DN). This estimator exploits "smoothness" in many common outcome functions to sharply reduce bias relative to naive differences-in-means estimation, while achieving variance exponentially smaller than unbiased inverse propensity weighted estimators. This has further advantages when combined with clustering approaches -- by accounting for bias explicitly, this estimator enables the use of smaller clusters without discarding boundary units, further reducing variance. This approach also subsumes previous Differences-in-Qs approaches as special cases.<br />
+    </details><br /></li>
+
+
+    <li><b><a href="https://arxiv.org/abs/2406.01939">Speeding up Policy Simulation in Supply Chain RL</a></b><br />
+    <i>with Vivek Farias, Joren Gijsbrechts, Aryan Khojandi, Tianyi Peng</i><br />
+        ICML 2025<br />
+        MSOM Service Management SIG 2025<br />
+    <details><summary>Details</summary><br />
+        Simulating a single trajectory of a dynamical system under some state-dependent policy is a core bottleneck in policy optimization algorithms. The many inherently serial policy evaluations that must be performed in a single simulation constitute the bulk of this bottleneck. To wit, in applying policy optimization to supply chain optimization (SCO) problems, simulating a single month of a supply chain can take several hours.
+        We present an iterative algorithm for policy simulation, which we dub Picard Iteration. This scheme carefully assigns policy evaluation tasks to independent processes. Within an iteration, a single process evaluates the policy only on its assigned tasks while assuming a certain 'cached' evaluation for other tasks; the cache is updated at the end of the iteration. Implemented on GPUs, this scheme admits batched evaluation of the policy on a single trajectory. We prove that the structure afforded by many SCO problems allows convergence in a small number of iterations, independent of the horizon. We demonstrate practical speedups of 400x on large-scale SCO problems even with a single GPU, and also demonstrate practical efficacy in other RL environments.
+        <br />
+    </details><br /></li>
+
+    <li><b><a href="https://arxiv.org/abs/2305.02542">Correcting for Interference in Experiments: A Case Study at Douyin</a></b><br />
+        <i>with Vivek Farias, Hao Li, Tianyi Peng, Xinyuyang Ren, and Huawei Zhang</i><br />
+        Preliminary: RecSys 2023.<br />
+        <details><summary>Details</summary><br />
+            Interference is a ubiquitous problem in experiments conducted on two-sided content marketplaces, such as Douyin (China&rsquo;s analog of TikTok). In many cases, creators are the natural unit of experimentation, but creators interfere with each other through competition for viewers&rsquo; limited time and attention. &ldquo;Naive&rdquo; estimators currently used in practice simply ignore the interference, but in doing so incur bias on the order of the treatment effect. We formalize the problem of inference in such experiments as one of policy evaluation. Off-policy estimators, while unbiased, are impractically high variance. We introduce a novel Monte-Carlo estimator, based on &ldquo;Differences-in-Qs&rdquo; (DQ) techniques, which achieves bias that is second-order in the treatment effect, while remaining sample-efficient to estimate. On the theoretical side, our contribution is to develop a generalized theory of Taylor expansions for policy evaluation, which extends DQ theory to all major MDP formulations. On the practical side, we implement our estimator on Douyin&rsquo;s experimentation platform, and in the process develop DQ into a truly &ldquo;plug-and-play&rdquo; estimator for interference in real-world settings: one which provides robust, low-bias, low-variance treatment effect estimates; admits computationally cheap, asymptotically exact uncertainty quantification; and reduces MSE by 99\% compared to the best existing alternatives in our applications.<br />
+        </details><br /></li>
+
+    <li><p>
+        <b><a href="papers/markovian-interference.pdf">Markovian Interference in Experiments</a></b><br />
+        <i>with Vivek Farias, Andrew A. Li, and Tianyi Peng.</i><br />
+        Preliminary: NeurIPS 2022. Major revision, submitted to Management Science.<br />
+    </p>
+    <div class="awards" id="org5e76750">
+        <ul class="org-ul">
+            <li><b>Winner</b>, 2022 RMP Jeff McGill Student Paper Award.<br /></li>
+            <li><b>Winner</b>, 2022 APS Best Student Paper Award.<br /></li>
+            <li><b>Oral</b> presentation at NeurIPS 2022.<br /></li>
+        </ul>
 
 </div>
 <p>
@@ -95,7 +107,7 @@ Synthetic controls are commonly used to control for non-stationarity, but the fi
    </details><br /></li>
 <li><b><a href="papers/limits-to-learning.pdf">The Limits to Learning a Diffusion Process</a></b><br />
 <i>with Jackie Baek, Vivek Farias, Andreea Georgescu, Retsef Levi, Tianyi Peng, Deeksha Sinha, and Joshua Wilde.</i><br />
-Preliminary: EC 2021. Major revision, submitted to Management Science.<br />
+Preliminary: EC 2021. To appear in Management Science.<br />
  <details><summary>Details</summary><br />
 Diffusion processes model viral transmission in a population. Two classic examples are the SIR model for disease transmission, and the Bass model for product adoption. We present a Cramer-Rao bound characterizing the difficulty of learning such models in a stochastic setting. Key parameters <i>cannot</i> be learned with reasonable variance until 2/3 of the time where infections (or product adoptions) are at their peak, a major barrier to timely pandemic response. In practice, we work around this via a regularization approach based on geographic heterogeneity, and apply this approach to predicting the spread of COVID-19.<br />
  </details><br /></li>
@@ -104,7 +116,7 @@ Diffusion processes model viral transmission in a population. Two classic exampl
 PNAS 2022<br /></li>
 <li><b><a href="papers/optimizing-offer-sets.pdf">Optimizing Offer Sets in Sublinear Time</a></b><br />
  <i>with Vivek Farias, Andrew A. Li, and Deeksha Sinha.</i><br />
- Preliminary: EC 2020. Minor revision, submitted to Management Science.<br />
+ Preliminary: EC 2020. To appear in Management Science.<br />
  <details><summary>Details</summary><br />
  Online retailers must be able to serve high-quality product assortments within milliseconds of a request. At a scale of millions of products and users, this necessitates approaches to assortment optimization that work in time <i>sub-linear</i> in the number of products. We design a sampling scheme, based on locality-sensitive hashing, which samples a set of candidate products which is 1) sub-linear in size, and 2) contains a provable approximation to the optimal assortment. Experiments show show a much better tradeoff between response time and optimality, relative to existing heuristics.<br />
    </details><br /></li>
